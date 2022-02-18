@@ -115,25 +115,25 @@ console.log(dividaDoisNumeros(umNumero, outroNumero))
 // DESAFIO
 
 //Exercício 1
-/*
-a.
+
+
 const teste1 = (parametro1) =>{
 const resultado = parametro1
 return resultado
 }
-const numeroTeste = 10
-console.log(teste1(numeroTeste))
-*/
+const escreva = "O resultado da soma é: "
 
 
 
-/*
-b.
+
+
 const teste2 = (parametro1, parametro2) =>{
-console.log(parametro1 + parametro2)
+return (parametro1 + parametro2)
 }
-teste2(19,31)
-*/
+const resultado2 = teste1(escreva) + teste2(1, 4)
+console.log(resultado2)
+
+
 
 
 
@@ -147,7 +147,4 @@ console.log(calculoHipotenusa2)
 }
 calculoHipo(10, 15)
 */
-
-
-
 
