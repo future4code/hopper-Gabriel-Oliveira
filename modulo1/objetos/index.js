@@ -174,3 +174,35 @@ function recebeFilme (filme1, filme2) {
 
 // Exercício 3
 
+
+
+let carrinho = []
+
+const frutinha1 = {
+    nome: "Abacaxi",
+    disponivel: true
+}
+
+const frutinha2 = {
+    nome: "Banana",
+    disponivel: true
+}
+
+const frutinha3 = {
+    nome: "Morango",
+    disponivel: true
+}
+
+function entradaFrutas(object1, object2, object3) {
+    carrinho.push(object1, object2, object3)
+    return [object1, object2, object3]
+}
+(entradaFrutas(frutinha1, frutinha2, frutinha3))
+//console.log(carrinho)
+
+function estoque(frutas) {
+    const indisponivel = (carrinho[0].disponivel = false)
+    return indisponivel
+}
+estoque(frutinha1)
+console.log(carrinho)
