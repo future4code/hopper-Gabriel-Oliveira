@@ -174,8 +174,7 @@ function recebeFilme (filme1, filme2) {
 
 // Exercício 3
 
-
-
+/*
 let carrinho = []
 
 const frutinha1 = {
@@ -201,8 +200,11 @@ function entradaFrutas(object1, object2, object3) {
 //console.log(carrinho)
 
 function estoque(frutas) {
-    const indisponivel = (carrinho[0].disponivel = false)
+    const estoqueNegativo = false
+    const indisponivel = frutas.disponivel = estoqueNegativo
+
     return indisponivel
 }
 estoque(frutinha1)
 console.log(carrinho)
+*/
