@@ -124,3 +124,313 @@ if ((generoDoFilme == "fantasia") && (valorDoIngresso <= 15)) {
     console.log("Escolha outro filme!")
 }
 */
+
+// ------------------------------- Exercício 2 -----------------------------------
+
+/*
+let nomeDoUsuario = prompt("Digite seu nome completo:")
+let tipoDeJogo = prompt("Digite o tipo de jogo: (considere IN para Internacional, e DO para Doméstico").toLowerCase()
+let etapaDoJogo = prompt("Digite a etapa do jogo: (considere SF para semifinal, DT para Terceiro Lugar e FI para Final").toLowerCase()
+let categoriaDoJogo = Number(prompt("Digite uma categoria: (1, 2, 3 ou 4)"))
+let quantidadeDeIngressos = Number(prompt("Digite a quantidade de ingressos:"))
+
+
+const categoriasSF = {
+    categoria1: 1320.00,
+    categoria2: 880.00,
+    categoria3: 550.00,
+    categoria4: 220.00
+}
+
+const categoriasDT = {
+    categoria1: 660.00,
+    categoria2: 440.00,
+    categoria3: 330.00,
+    categoria4: 170.00,
+}
+
+const categoriasFI = {
+    categoria1: 1980.00,
+    categoria2: 1320.00,
+    categoria3: 880.00,
+    categoria4: 330.00
+}
+
+
+if ((tipoDeJogo == "in") && (etapaDoJogo == "sf") && categoriaDoJogo == 1) {
+    console.log("------- DADOS DA COMPRA -------")
+    console.log(`Nome do Usuário: ${nomeDoUsuario}`)
+    console.log("Tipo de jogo: Internacional")
+    console.log("Etapa do jogo: Semi-Final")
+    console.log(`Categoria: ${categoriaDoJogo}`)
+    console.log(`Quantidade de ingressos: ${quantidadeDeIngressos}`)
+    console.log("------- Valores -------")
+    console.log(`Valor do ingresso: U$ ${categoriasSF.categoria1 / 4.10}`)
+    console.log(`Valor total: U$ ${(quantidadeDeIngressos * categoriasSF.categoria1) / 4.10}`)
+} 
+
+
+else if ((tipoDeJogo == "in") && (etapaDoJogo == "sf") && categoriaDoJogo == 2) {
+    console.log("------- DADOS DA COMPRA -------")
+    console.log(`Nome do Usuário: ${nomeDoUsuario}`)
+    console.log("Tipo de jogo: Internacional")
+    console.log("Etapa do jogo: Semi-Final")
+    console.log(`Categoria: ${categoriaDoJogo}`)
+    console.log(`Quantidade de ingressos: ${quantidadeDeIngressos}`)
+    console.log("------- Valores -------")
+    console.log(`Valor do ingresso: U$ ${categoriasSF.categoria2 / 4.10}`)
+    console.log(`Valor total: U$ ${(quantidadeDeIngressos * categoriasSF.categoria2) / 4.10}`)
+}
+
+else if ((tipoDeJogo == "in") && (etapaDoJogo == "sf") && categoriaDoJogo == 3) {
+    console.log("------- DADOS DA COMPRA -------")
+    console.log(`Nome do Usuário: ${nomeDoUsuario}`)
+    console.log("Tipo de jogo: Internacional")
+    console.log("Etapa do jogo: Semi-Final")
+    console.log(`Categoria: ${categoriaDoJogo}`)
+    console.log(`Quantidade de ingressos: ${quantidadeDeIngressos}`)
+    console.log("------- Valores -------")
+    console.log(`Valor do ingresso: U$ ${categoriasSF.categoria3 / 4.10}`)
+    console.log(`Valor total: U$ ${(quantidadeDeIngressos * categoriasSF.categoria3) / 4.10}`)
+} 
+
+else if  ((tipoDeJogo == "in") && (etapaDoJogo == "sf") && categoriaDoJogo == 4) {
+    console.log("------- DADOS DA COMPRA -------")
+    console.log(`Nome do Usuário: ${nomeDoUsuario}`)
+    console.log("Tipo de jogo: Internacional")
+    console.log("Etapa do jogo: Semi-Final")
+    console.log(`Categoria: ${categoriaDoJogo}`)
+    console.log(`Quantidade de ingressos: ${quantidadeDeIngressos}`)
+    console.log("------- Valores -------")
+    console.log(`Valor do ingresso: U$ ${categoriasSF.categoria4 / 4.10}`)
+    console.log(`Valor total: U$ ${(quantidadeDeIngressos * categoriasSF.categoria4) / 4.10}`)
+} 
+
+else if ((tipoDeJogo == "in") && (etapaDoJogo == "dt") && categoriaDoJogo == 1) {
+    console.log("------- DADOS DA COMPRA -------")
+    console.log(`Nome do Usuário: ${nomeDoUsuario}`)
+    console.log("Tipo de jogo: Internacional")
+    console.log("Etapa do jogo: Disputa de Terceiro Lugar")
+    console.log(`Categoria: ${categoriaDoJogo}`)
+    console.log(`Quantidade de ingressos: ${quantidadeDeIngressos}`)
+    console.log("------- Valores -------")
+    console.log(`Valor do ingresso: U$ ${categoriasDT.categoria1 / 4.10}`)
+    console.log(`Valor total: U$ ${(quantidadeDeIngressos * categoriasDT.categoria1) / 4.10}`)
+}
+
+else if ((tipoDeJogo == "in") && (etapaDoJogo == "dt") && categoriaDoJogo == 2) {
+    console.log("------- DADOS DA COMPRA -------")
+    console.log(`Nome do Usuário: ${nomeDoUsuario}`)
+    console.log("Tipo de jogo: Internacional")
+    console.log("Etapa do jogo: Disputa de Terceiro Lugar")
+    console.log(`Categoria: ${categoriaDoJogo}`)
+    console.log(`Quantidade de ingressos: ${quantidadeDeIngressos}`)
+    console.log("------- Valores -------")
+    console.log(`Valor do ingresso: U$ ${categoriasDT.categoria2 / 4.10}`)
+    console.log(`Valor total: U$ ${(quantidadeDeIngressos * categoriasDT.categoria2) / 4.10}`)
+}
+
+else if ((tipoDeJogo == "in") && (etapaDoJogo == "dt") && categoriaDoJogo == 3) {
+    console.log("------- DADOS DA COMPRA -------")
+    console.log(`Nome do Usuário: ${nomeDoUsuario}`)
+    console.log("Tipo de jogo: Internacional")
+    console.log("Etapa do jogo: Disputa de Terceiro Lugar")
+    console.log(`Categoria: ${categoriaDoJogo}`)
+    console.log(`Quantidade de ingressos: ${quantidadeDeIngressos}`)
+    console.log("------- Valores -------")
+    console.log(`Valor do ingresso: U$ ${categoriasDT.categoria3 / 4.10}`)
+    console.log(`Valor total: U$ ${(quantidadeDeIngressos * categoriasDT.categoria3) / 4.10}`)
+}
+
+else if ((tipoDeJogo == "in") && (etapaDoJogo == "dt") && categoriaDoJogo == 4) {
+    console.log("------- DADOS DA COMPRA -------")
+    console.log(`Nome do Usuário: ${nomeDoUsuario}`)
+    console.log("Tipo de jogo: Internacional")
+    console.log("Etapa do jogo: Disputa de Terceiro Lugar")
+    console.log(`Categoria: ${categoriaDoJogo}`)
+    console.log(`Quantidade de ingressos: ${quantidadeDeIngressos}`)
+    console.log("------- Valores -------")
+    console.log(`Valor do ingresso: U$ ${categoriasDT.categoria4 / 4.10}`)
+    console.log(`Valor total: U$ ${(quantidadeDeIngressos * categoriasDT.categoria4) / 4.10}`)
+}
+
+else if ((tipoDeJogo == "in") && (etapaDoJogo == "fi") && categoriaDoJogo == 1) {
+    console.log("------- DADOS DA COMPRA -------")
+    console.log(`Nome do Usuário: ${nomeDoUsuario}`)
+    console.log("Tipo de jogo: Internacional")
+    console.log("Etapa do jogo: Final")
+    console.log(`Categoria: ${categoriaDoJogo}`)
+    console.log(`Quantidade de ingressos: ${quantidadeDeIngressos}`)
+    console.log("------- Valores -------")
+    console.log(`Valor do ingresso: U$ ${categoriasFI.categoria1 / 4.10}`)
+    console.log(`Valor total: U$ ${(quantidadeDeIngressos * categoriasFI.categoria1) / 4.10}`)
+}
+else if ((tipoDeJogo == "in") && (etapaDoJogo == "fi") && categoriaDoJogo == 2) {
+    console.log("------- DADOS DA COMPRA -------")
+    console.log(`Nome do Usuário: ${nomeDoUsuario}`)
+    console.log("Tipo de jogo: Internacional")
+    console.log("Etapa do jogo: Final")
+    console.log(`Categoria: ${categoriaDoJogo}`)
+    console.log(`Quantidade de ingressos: ${quantidadeDeIngressos}`)
+    console.log("------- Valores -------")
+    console.log(`Valor do ingresso: U$ ${categoriasFI.categoria2 / 4.10}`)
+    console.log(`Valor total: U$ ${(quantidadeDeIngressos * categoriasFI.categoria2) / 4.10}`)
+}
+else if ((tipoDeJogo == "in") && (etapaDoJogo == "fi") && categoriaDoJogo == 3) {
+    console.log("------- DADOS DA COMPRA -------")
+    console.log(`Nome do Usuário: ${nomeDoUsuario}`)
+    console.log("Tipo de jogo: Internacional")
+    console.log("Etapa do jogo: Final")
+    console.log(`Categoria: ${categoriaDoJogo}`)
+    console.log(`Quantidade de ingressos: ${quantidadeDeIngressos}`)
+    console.log("------- Valores -------")
+    console.log(`Valor do ingresso: U$ ${categoriasFI.categoria3 / 4.10}`)
+    console.log(`Valor total: U$ ${(quantidadeDeIngressos * categoriasFI.categoria3) / 4.10}`)
+}
+else if ((tipoDeJogo == "in") && (etapaDoJogo == "fi") && categoriaDoJogo == 4) {
+    console.log("------- DADOS DA COMPRA -------")
+    console.log(`Nome do Usuário: ${nomeDoUsuario}`)
+    console.log("Tipo de jogo: Internacional")
+    console.log("Etapa do jogo: Final")
+    console.log(`Categoria: ${categoriaDoJogo}`)
+    console.log(`Quantidade de ingressos: ${quantidadeDeIngressos}`)
+    console.log("------- Valores -------")
+    console.log(`Valor do ingresso: U$ ${categoriasFI.categoria4 / 4.10}`)
+    console.log(`Valor total: U$ ${(quantidadeDeIngressos * categoriasFI.categoria4) / 4.10}`)
+}
+else if ((tipoDeJogo == "do") && (etapaDoJogo == "sf") && categoriaDoJogo == 1) {
+    console.log("------- DADOS DA COMPRA -------")
+    console.log(`Nome do Usuário: ${nomeDoUsuario}`)
+    console.log("Tipo de jogo: Nacional")
+    console.log("Etapa do jogo: Semi-Final")
+    console.log(`Categoria: ${categoriaDoJogo}`)
+    console.log(`Quantidade de ingressos: ${quantidadeDeIngressos}`)
+    console.log("------- Valores -------")
+    console.log(`Valor do ingresso: R$ ${categoriasSF.categoria1}`)
+    console.log(`Valor total: R$ ${quantidadeDeIngressos * categoriasSF.categoria1}`)
+}
+else if ((tipoDeJogo == "do") && (etapaDoJogo == "sf") && categoriaDoJogo == 2) {
+    console.log("------- DADOS DA COMPRA -------")
+    console.log(`Nome do Usuário: ${nomeDoUsuario}`)
+    console.log("Tipo de jogo: Nacional")
+    console.log("Etapa do jogo: Semi-Final")
+    console.log(`Categoria: ${categoriaDoJogo}`)
+    console.log(`Quantidade de ingressos: ${quantidadeDeIngressos}`)
+    console.log("------- Valores -------")
+    console.log(`Valor do ingresso: R$ ${categoriasSF.categoria2}`)
+    console.log(`Valor total: R$ ${quantidadeDeIngressos * categoriasSF.categoria2}`)
+}
+else if ((tipoDeJogo == "do") && (etapaDoJogo == "sf") && categoriaDoJogo == 3) {
+    console.log("------- DADOS DA COMPRA -------")
+    console.log(`Nome do Usuário: ${nomeDoUsuario}`)
+    console.log("Tipo de jogo: Nacional")
+    console.log("Etapa do jogo: Semi-Final")
+    console.log(`Categoria: ${categoriaDoJogo}`)
+    console.log(`Quantidade de ingressos: ${quantidadeDeIngressos}`)
+    console.log("------- Valores -------")
+    console.log(`Valor do ingresso: R$ ${categoriasSF.categoria3}`)
+    console.log(`Valor total: R$ ${quantidadeDeIngressos * categoriasSF.categoria3}`)
+}
+else if ((tipoDeJogo == "do") && (etapaDoJogo == "sf") && categoriaDoJogo == 4) {
+    console.log("------- DADOS DA COMPRA -------")
+    console.log(`Nome do Usuário: ${nomeDoUsuario}`)
+    console.log("Tipo de jogo: Nacional")
+    console.log("Etapa do jogo: Semi-Final")
+    console.log(`Categoria: ${categoriaDoJogo}`)
+    console.log(`Quantidade de ingressos: ${quantidadeDeIngressos}`)
+    console.log("------- Valores -------")
+    console.log(`Valor do ingresso: R$ ${categoriasSF.categoria4}`)
+    console.log(`Valor total: R$ ${quantidadeDeIngressos * categoriasSF.categoria4}`)
+}
+else if ((tipoDeJogo == "do") && (etapaDoJogo == "dt") && categoriaDoJogo == 1) {
+    console.log("------- DADOS DA COMPRA -------")
+    console.log(`Nome do Usuário: ${nomeDoUsuario}`)
+    console.log("Tipo de jogo: Nacional")
+    console.log("Etapa do jogo: Disputa de Terceiro Lugar")
+    console.log(`Categoria: ${categoriaDoJogo}`)
+    console.log(`Quantidade de ingressos: ${quantidadeDeIngressos}`)
+    console.log("------- Valores -------")
+    console.log(`Valor do ingresso: R$ ${categoriasDT.categoria1}`)
+    console.log(`Valor total: R$ ${quantidadeDeIngressos * categoriasDT.categoria1}`)
+}
+else if ((tipoDeJogo == "do") && (etapaDoJogo == "dt") && categoriaDoJogo == 2) {
+    console.log("------- DADOS DA COMPRA -------")
+    console.log(`Nome do Usuário: ${nomeDoUsuario}`)
+    console.log("Tipo de jogo: Nacional")
+    console.log("Etapa do jogo: Disputa de Terceiro Lugar")
+    console.log(`Categoria: ${categoriaDoJogo}`)
+    console.log(`Quantidade de ingressos: ${quantidadeDeIngressos}`)
+    console.log("------- Valores -------")
+    console.log(`Valor do ingresso: R$ ${categoriasDT.categoria2}`)
+    console.log(`Valor total: R$ ${quantidadeDeIngressos * categoriasDT.categoria2}`)
+}
+else if ((tipoDeJogo == "do") && (etapaDoJogo == "dt") && categoriaDoJogo == 3) {
+    console.log("------- DADOS DA COMPRA -------")
+    console.log(`Nome do Usuário: ${nomeDoUsuario}`)
+    console.log("Tipo de jogo: Nacional")
+    console.log("Etapa do jogo: Disputa de Terceiro Lugar")
+    console.log(`Categoria: ${categoriaDoJogo}`)
+    console.log(`Quantidade de ingressos: ${quantidadeDeIngressos}`)
+    console.log("------- Valores -------")
+    console.log(`Valor do ingresso: R$ ${categoriasDT.categoria3}`)
+    console.log(`Valor total: R$ ${quantidadeDeIngressos * categoriasDT.categoria3}`)
+}
+else if ((tipoDeJogo == "do") && (etapaDoJogo == "dt") && categoriaDoJogo == 4) {
+    console.log("------- DADOS DA COMPRA -------")
+    console.log(`Nome do Usuário: ${nomeDoUsuario}`)
+    console.log("Tipo de jogo: Nacional")
+    console.log("Etapa do jogo: Disputa de Terceiro Lugar")
+    console.log(`Categoria: ${categoriaDoJogo}`)
+    console.log(`Quantidade de ingressos: ${quantidadeDeIngressos}`)
+    console.log("------- Valores -------")
+    console.log(`Valor do ingresso: R$ ${categoriasDT.categoria4}`)
+    console.log(`Valor total: R$ ${quantidadeDeIngressos * categoriasDT.categoria4}`)
+}
+else if ((tipoDeJogo == "do") && (etapaDoJogo == "fi") && categoriaDoJogo == 1) {
+    console.log("------- DADOS DA COMPRA -------")
+    console.log(`Nome do Usuário: ${nomeDoUsuario}`)
+    console.log("Tipo de jogo: Nacional")
+    console.log("Etapa do jogo: Final")
+    console.log(`Categoria: ${categoriaDoJogo}`)
+    console.log(`Quantidade de ingressos: ${quantidadeDeIngressos}`)
+    console.log("------- Valores -------")
+    console.log(`Valor do ingresso: R$ ${categoriasFI.categoria1}`)
+    console.log(`Valor total: R$ ${quantidadeDeIngressos * categoriasFI.categoria1}`)
+}
+else if ((tipoDeJogo == "do") && (etapaDoJogo == "fi") && categoriaDoJogo == 2) {
+    console.log("------- DADOS DA COMPRA -------")
+    console.log(`Nome do Usuário: ${nomeDoUsuario}`)
+    console.log("Tipo de jogo: Nacional")
+    console.log("Etapa do jogo: Final")
+    console.log(`Categoria: ${categoriaDoJogo}`)
+    console.log(`Quantidade de ingressos: ${quantidadeDeIngressos}`)
+    console.log("------- Valores -------")
+    console.log(`Valor do ingresso: R$ ${categoriasFI.categoria2}`)
+    console.log(`Valor total: R$ ${quantidadeDeIngressos * categoriasFI.categoria2}`)
+}
+else if ((tipoDeJogo == "do") && (etapaDoJogo == "fi") && categoriaDoJogo == 3) {
+    console.log("------- DADOS DA COMPRA -------")
+    console.log(`Nome do Usuário: ${nomeDoUsuario}`)
+    console.log("Tipo de jogo: Nacional")
+    console.log("Etapa do jogo: Final")
+    console.log(`Categoria: ${categoriaDoJogo}`)
+    console.log(`Quantidade de ingressos: ${quantidadeDeIngressos}`)
+    console.log("------- Valores -------")
+    console.log(`Valor do ingresso: R$ ${categoriasFI.categoria3}`)
+    console.log(`Valor total: R$ ${quantidadeDeIngressos * categoriasFI.categoria3}`)
+}
+else if ((tipoDeJogo == "do") && (etapaDoJogo == "fi") && categoriaDoJogo == 4) {
+    console.log("------- DADOS DA COMPRA -------")
+    console.log(`Nome do Usuário: ${nomeDoUsuario}`)
+    console.log("Tipo de jogo: Nacional")
+    console.log("Etapa do jogo: Final")
+    console.log(`Categoria: ${categoriaDoJogo}`)
+    console.log(`Quantidade de ingressos: ${quantidadeDeIngressos}`)
+    console.log("------- Valores -------")
+    console.log(`Valor do ingresso: R$ ${categoriasFI.categoria4}`)
+    console.log(`Valor total: R$ ${quantidadeDeIngressos * categoriasFI.categoria4}`)
+}
+else{
+    console.log("Verifique se você não digitou algum dado errado...")
+}
+*/
