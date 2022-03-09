@@ -45,48 +45,55 @@ console.log(nomeDosPets)
 
 // ------------------------------- Exercício 2 -----------------------------------
 
-// const arrayOriginal = [181, 122, 78, 73, 95, 77, 700]
+//  const arrayOriginal = [181, 122, 78, 73, 95, 77, 700]
 
 
 /*
 a.
-for (let numeros of arrayOriginal) {
-    console.log(numeros)
+function retornarNumeros (array) {
+  for (let numero of arrayOriginal) {
+  console.log(numero)
+  } 
 }
+retornarNumeros(arrayOriginal)
 
 --------------------------------------------------------------------------------------
 
 b.
-for (let numeros of arrayOriginal) {
-    const divisaoPor10 = (numeros / 10)
+function retornarDivisão (array) {
+  for (let numero of arrayOriginal) {
+    let divisaoPor10 = (numero / 10)
     console.log(divisaoPor10)
+  } 
 }
+retornarDivisão(arrayOriginal)
 
 --------------------------------------------------------------------------------------
 
 c.
-let arrayNumerosPares = []
-
-for (let numeros of arrayOriginal) {
-    if (numeros % 2 === 0) {
-        arrayNumerosPares.push(numeros)
-    }
-    
+function retornarNumerosPares(array) {
+  let numerosPares = []
+  for (let numero of arrayOriginal) {
+    if (numero % 2 === 0)
+      numerosPares.push(numero)
+  }
+console.log(numerosPares)
 }
-console.log(arrayNumerosPares)
+retornarNumerosPares(arrayOriginal)
 
 --------------------------------------------------------------------------------------
 
 d.
- let novoArray = []
+function retornarFraseComIndice(array) {
+  let novoArray = []
+  for (let i = 0; i < arrayOriginal.length; i++) {
+    let entrarArray = (O elemento do índex ${i} é: ${arrayOriginal[i]})
+    novoArray.push(entrarArray)
+  }
 
- for (let i = 0; i < arrayOriginal.length; i++) {
-   let entrarArray = (`O elemento do índex ${i} é: ${arrayOriginal[i]}`)
-   novoArray.push(entrarArray)
-
- }
- 
- console.log(novoArray)
+  console.log(novoArray)
+}
+retornarFraseComIndice(arrayOriginal)
 
 --------------------------------------------------------------------------------------
 
