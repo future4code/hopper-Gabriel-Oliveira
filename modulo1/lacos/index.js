@@ -98,24 +98,22 @@ retornarFraseComIndice(arrayOriginal)
 --------------------------------------------------------------------------------------
 
 e.
-let numeroMaior = 0
-
+function retornarMaiorEMenor(array) {
+  let numeroMaior = 0
 for (const maiorNumero of arrayOriginal) {
   if (maiorNumero > numeroMaior) {
     numeroMaior = maiorNumero;
-
   }
 }
-
 let numeroMenor = numeroMaior
-
  for (const menorNumero of arrayOriginal) {
    if (menorNumero < numeroMenor) {
      numeroMenor = menorNumero
    }
  }
-
 console.log(`O número maior é: ${numeroMaior} e o número menor é: ${numeroMenor}`)
+}
+retornarMaiorEMenor(arrayOriginal)
 */
 
 
