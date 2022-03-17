@@ -119,22 +119,40 @@ function retornaSegundoMaiorESegundoMenor(array) {
 
 // EXERCÍCIO 11
 function retornaChamadaDeFilme(filme) {
-   
+    return `Venha assistir ao filme ${filme.nome}, de ${filme.ano}, dirigido por ${filme.diretor} e estrelado por ${filme.atores.join(", ")}.`
 }
 
 // EXERCÍCIO 12
 function retornaPessoaAnonimizada(pessoa) {
-   
+    pessoaAnonima = {
+        ...pessoa,
+        nome: "ANÔNIMO"
+    }
+    return pessoaAnonima
 }
+retornaPessoaAnonimizada(pessoa)
 
 // EXERCÍCIO 13A
 function retornaPessoasAutorizadas(pessoas) {
-   
+    const pessoasAutorizadas = []
+    for (const pessoa of pessoas) {
+        if (pessoa.altura > 1.5 && pessoa.idade > 14 && pessoa.idade < 60) {
+            pessoasAutorizadas.push(pessoa)
+        }
+       
+    }
+    return pessoasAutorizadas
 }
 
 // EXERCÍCIO 13B
 function retornaPessoasNaoAutorizadas(pessoas) {
-  
+    const pessoasNaoAutorizadas = []
+    for (const pessoa of pessoas) {
+        if (pessoa.altura < 1.5 || pessoa.idade <= 14 || pessoa.idade >= 60) {
+            pessoasNaoAutorizadas.push(pessoa)
+        }
+    }
+    return pessoasNaoAutorizadas
 }
 
 // EXERCÍCIO 14
