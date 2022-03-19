@@ -1,0 +1,27 @@
+// 1. Ter Atenção no Enunciado
+
+Ler muitas vezes o enunciado, com calma...
+
+// 2. Retirar Informações Relevantes
+
+Tirar do enunciado, palavras chaves...
+
+// 3. Pensar nas Entradas e Saídas
+
+Pensar de como estas Informações vão entrar no código, e como devem sair...
+
+// 4. Fazer Um Esquema Visual
+
+Implementar diagramas, criar em um papel exemplos de um esquema para resolver o trabalho proposto...
+
+// 5. Criar Um Código Feio
+
+Criar o famoso código sujo, importante é entregar o resultado...
+
+// 6. Testar: Força-Bruta
+
+Testar ele de diversas formas, e muitas vezes...
+
+// 7. Refatorar
+
+Após testar muitas vezes, é hora de refatorar(reduzir) o seu código. Famoso código limpo...
