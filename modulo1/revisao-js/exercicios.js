@@ -15,14 +15,8 @@ function retornaArrayInvertido(array) {
 
 // EXERCÍCIO 03
 function retornaArrayOrdenado(array) {
-    return array.sort(function (i, ii) {
-        if (i > ii) {
-            return 1
-        } if (i < ii) {
-            return -1
-        }
-        return 0
-    })
+    return array.sort((a, b) => a - b)
+
 }
 retornaArrayOrdenado(array)
 
@@ -104,7 +98,7 @@ function retornaNPrimeirosPares(n) {
 function classificaTriangulo(ladoA, ladoB, ladoC) {
     if (ladoA == ladoB && ladoA == ladoC) {
         return "Equilátero"
-    } else if(ladoA == ladoC || ladoA == ladoB || ladoB == ladoC) {
+    } else if (ladoA == ladoC || ladoA == ladoB || ladoB == ladoC) {
         return "Isósceles"
     } else {
         return "Escaleno"
@@ -114,7 +108,8 @@ function classificaTriangulo(ladoA, ladoB, ladoC) {
 
 // EXERCÍCIO 10
 function retornaSegundoMaiorESegundoMenor(array) {
-  
+    let segundoEPenultimo = array.sort((a, b) => a - b)
+    return [segundoEPenultimo[segundoEPenultimo.length - 2], segundoEPenultimo[1]]
 }
 
 // EXERCÍCIO 11
@@ -139,7 +134,7 @@ function retornaPessoasAutorizadas(pessoas) {
         if (pessoa.altura > 1.5 && pessoa.idade > 14 && pessoa.idade < 60) {
             pessoasAutorizadas.push(pessoa)
         }
-       
+
     }
     return pessoasAutorizadas
 }
@@ -160,13 +155,17 @@ function retornaContasComSaldoAtualizado(contas) {
 
 }
 
+
+
+
 // EXERCÍCIO 15A
 function retornaArrayOrdenadoAlfabeticamente(consultas) {
-  
+    let ordenarNome = consultas.sort((a, b) => a.nome.localeCompare(b.nome))
+    return ordenarNome
 }
 
 // EXERCÍCIO 15B
 function retornaArrayOrdenadoPorData(consultas) {
 
 }
-   
+
