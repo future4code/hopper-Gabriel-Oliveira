@@ -152,7 +152,12 @@ function retornaPessoasNaoAutorizadas(pessoas) {
 
 // EXERCÍCIO 14
 function retornaContasComSaldoAtualizado(contas) {
-
+    for (const nome of contas) {
+        let valorDasCompras = nome.compras.reduce((accum, curr) => accum + curr, 0)
+        nome.saldoTotal -= valorDasCompras
+        nome.compras = []
+    }
+    return contas
 }
 
 
@@ -168,4 +173,5 @@ function retornaArrayOrdenadoAlfabeticamente(consultas) {
 function retornaArrayOrdenadoPorData(consultas) {
 
 }
+
 
