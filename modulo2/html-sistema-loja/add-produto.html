@@ -1,16 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Adicionar Produto</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
+
 <body>
-    <div>
-        <p>Baat - Artes Digitais</p>
-    </div>
-    
+    <header class="cabecalho">
+
+        <div>
+            <p>Baat - Artes Digitais</p>
+        </div>
+
+    </header>
+
     <div>
         <a href="./index.html">Página Inicial</a>
         <a href="./ctrl-estoque.html">Controle de Estoque</a>
@@ -18,26 +25,26 @@
         <a href="./funcionarios.html">Funcionários</a>
     </div>
 
-    
+
     <h2>Adicionar Produto</h2>
     <form action="">
         <div>
             <label for="link-foto">Link para foto: </label>
             <input type="url" id="link-foto" name="link-foto">
         </div>
-        
+
         <div>
             <label for="descricao">Descrição do produto: </label>
             <!-- Adicione o id apropriado para o input abaixo -->
             <input type="text" id="descricao" name="descrição">
         </div>
-        
+
         <div>
             <label for="preco">Preço (em R$): </label>
             <!-- Adicione o id apropriado e o type para receber números abaixo -->
             <input type="number" id="preco" name="preço">
         </div>
-        
+
         <div>
             <!-- Preencha as propriedades necessárias para os elementos abaixo -->
             <label for="quantidade"> Quantidade disponível: </label>
@@ -51,5 +58,17 @@
 
     </form>
 
+    <footer class="rodape"> 
+        <p>Siga-nos nas redes sociais!</p>
+
+        <div>
+            <img src="./img/instagram.png" />
+            <img src="./img/youtube.png" />
+            <img src="./img/facebook.png" />
+            <img src="./img/whatsapp.png" />
+        </div>
+    </footer>
+
 </body>
+
 </html>

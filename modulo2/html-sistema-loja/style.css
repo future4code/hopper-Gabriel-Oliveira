@@ -1,0 +1,30 @@
+.bem-vindo {
+    background-color: #FFEA00;
+    color: #ff005a;
+}
+
+.rodape {
+    text-align: center;
+    margin-top: 10%;
+    background-color: #ff005a;
+    color: #FFEA00;
+
+}
+
+.cabecalho {
+    height: 200px;
+    width: 100%;
+    background-color: #FFEA00;
+    color: #ff005a;
+}
+
+.logo {
+    height: 80px;
+    width: 90px;
+}
+
+.imagens {
+    height: 100px;
+    width: 100px;
+}
+
