@@ -81,6 +81,9 @@ EU RETIREI O BG BLACK.
 
 #container-de-descricao>ol {
     padding: 15px 0px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 15em
 }
 
 #container-para-comprar {
@@ -118,6 +121,10 @@ td button {
     height: 30px;
     border-radius: 5px;
     color: black;
+}
+
+td button:hover{
+    background-color:#635a3d;
 }
 
 .container-do-search {
