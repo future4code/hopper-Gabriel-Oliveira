@@ -26,16 +26,18 @@ button:focus {
 }
 
 img {
-    width: 100px;
+    width: 60px;
 }
 
 div>p:first-child {
     display: inline;
 }
 
+/*
 div img {
-    background: black;
+EU RETIREI O BG BLACK.
 }
+*/
 
 .botao-amarelo {
     display: inline-block;
