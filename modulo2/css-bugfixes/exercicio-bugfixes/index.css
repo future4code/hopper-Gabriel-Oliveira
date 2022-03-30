@@ -11,6 +11,7 @@ body{
 * {
     margin: 0;
     padding: 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
 }
 
 h2 {
@@ -120,6 +121,8 @@ div:last-child {
 table {
     width: 60%;
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 td button {
@@ -148,8 +151,14 @@ td button:hover{
     border-radius: 5px;
     font-size: 10px;
     color: black;
+    text-align: center;
 }
 
 #back-button:hover {
     background-color: #635a3d
+}
+
+.back-button {
+    text-align: center;
+    margin-top: 10vw;
 }
