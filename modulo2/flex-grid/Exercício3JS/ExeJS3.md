@@ -1,17 +1,16 @@
 ``` js
 
-function contaOcorrencias(arrayDeNumeros, numeroEscolhido) {
-  let somaDeVezes = 0
-  for (let i = 0; i < arrayDeNumeros.length; i++) {
-    if (arrayDeNumeros[i] === numeroEscolhido) {
-      somaDeVezes = somaDeVezes + 1
-    }
+function contaOcorrencias(arrayDeNumeros, numeroEscolhido){
+let vezesDeRepeticao = 0
+for(let i of arrayDeNumeros){
+  if(i == numeroEscolhido){
+    vezesDeRepeticao++
   }
-if(somaDeVezes === 0) {
-  return " O Número não foi encontrado"
-} else {
-  return (`O número ${numero} aparece ${somaDeVezes}x`)
 }
+if(vezesDeRepeticao == 0){
+  return "Número não encontrado"
+} else {
+  return `O número ${numeroEscolhido} aparece ${vezesDeRepeticao}x`
 }
 
 ```
