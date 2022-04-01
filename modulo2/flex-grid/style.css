@@ -3,6 +3,11 @@
     margin: 0;
 }
 
+body{
+    display: flex;
+    flex-direction: column;
+}
+
 header {
     display: flex;
     align-items: center;
@@ -49,6 +54,8 @@ main{
     justify-content: flex-start; 
     padding-right: 15%;
     text-align: center;
+    padding-bottom: 59.1vh;
+    
 }
 
 .imagens-menu {
@@ -77,6 +84,10 @@ main{
     flex: 8;
 }
 
+.alinhar-texto-bolo{
+    text-align: center;
+}
+
 .opcoes{
     display: flex;
     flex-direction: column;
@@ -92,8 +103,13 @@ main{
     width: 210px  
 }
 
-footer {
-
+footer>h5{
+    text-align: center;
+    background-color: mediumvioletred;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 
