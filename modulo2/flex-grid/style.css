@@ -1,0 +1,130 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    background-color: mediumvioletred;
+}
+
+.imagem-logo {
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    margin-left: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.texto-cabecalho {
+    font-family: 'Times New Roman', Times, serif ;
+    margin-top: 2px;
+    margin-left: 20px;   
+}
+
+.botao-login {
+    position: relative;
+    left: 86%;
+    height: 25px;
+    width: 50px;
+}
+
+
+/* MENU - MAIN */
+
+
+
+main{
+    display: flex;
+    flex-direction: row;
+    flex: 2;
+}
+
+.menu-principal{
+    background-color: #f2d0e0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    padding-right: 15%;
+    text-align: center;
+    padding-bottom: 59.1vh; 
+}
+
+.imagens-menu {
+    width: 20px;
+}
+
+.texto-menu{
+    margin-left: 10px;
+    flex: 3;
+}
+
+.itens-menu {
+    display: flex;
+    padding-right: 10px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    margin-top: 20px;
+}
+
+.menu-de-opcoes{
+    background-color: white;
+    display: flex;
+    flex-flow: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex: 8;
+}
+
+.alinhar-texto-bolo{
+    text-align: center;
+}
+
+.opcoes{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 2px 3px rgb(207, 207, 207);
+    margin: 10px;
+    align-items: center;
+    justify-content: space-between;
+    width: 250px;
+    height: 260px;
+}
+
+.img-bolo{
+    width: 210px  
+}
+
+footer>h5{
+    text-align: center;
+    background-color: mediumvioletred;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
