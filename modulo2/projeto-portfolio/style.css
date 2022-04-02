@@ -1,0 +1,57 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* SEJA BEM VINDO*/
+
+.topo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.detalhes {
+    width: 80px;
+    margin: 10px;
+}
+
+.foto-perfil {
+    width: 400px;
+    margin-left: 80px;
+}
+
+.eu {
+    display: flex;
+    text-align: center;
+    margin-left: 80px;
+}
+
+.texto-eu {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-left: 120px;
+    color: #FFA901;
+}
+
+/* EXP PROFISSIONAIS*/
+
+.experiencias{
+    display: flex;
+    text-align: center;
+    margin-left: 20px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.texto-experiencias{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-left: 100px;
+    color: #FFA901;
+}
+
+.foto-experiencias{
+    width: 400px; 
+}
