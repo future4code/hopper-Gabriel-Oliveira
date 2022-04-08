@@ -1,55 +1,86 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    position: relative;
+}
+
+.cabeçalho a{
+    display: flex;
+    align-items: center;
 }
 
 
-.logo{
+.logo {
     display: flex;
     margin-right: 20px;
     margin-left: 10px;
     align-items: center;
 }
 
-.logo img{
+.logo img {
     width: 30px;
     height: 30px;
 }
 
-.logo h3{
+.logo h3 {
     margin-left: 10px;
     color: white;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.pesquisa{
+.pesquisa {
     display: flex;
     justify-content: end;
     margin-right: 10px;
     margin-left: 20px;
     align-items: center;
+    position: relative;
 }
 
-.lupa{
+.lupa {
     width: 25px;
     height: 25px;
     margin-left: 5px;
     margin-right: 150px;
 }
 
-.perfil{
+.perfil {
     width: 30px;
     height: 30px;
-    margin-right: 10px;
 }
 
-.cabeçalho{
+.cabeçalho {
     display: flex;
     background-color: black;
     justify-content: space-between;
     padding: 15px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+
 }
 
+.campo-busca {
+    display: flex;
+    align-items: center;
+    width: 200px;
+    margin: 20px 0px;
+    margin-right: 30px;
+}
+
+.campo-busca input {
+    background-color: transparent;
+    border: 1px solid #b21f1f;
+    border-radius: 5px;
+    color: white;
+    padding: 5px;
+}
 
 
 
@@ -58,61 +89,70 @@
 
 
 
-main{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;   
-    padding: 15px;
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     text-align: center;
+    max-width: 1150px;
+    margin: 0 auto;
+    margin-top: 150px;
+    margin-bottom: 50px;
 }
 
-.imagens-thumb{
+.imagens-thumb {
     width: 300px;
 }
 
-a{
+a {
     text-decoration: none;
     color: black;
 }
 
-.videoplay{
+.videoplay {
     padding: 10px;
-    display: flex;
-    flex-direction: column;
     align-items: center;
     margin: 10px;
     border: 3px solid black;
-    background: linear-gradient(to right, #1a2a6c, #b21f1f, #fdbb2d);
-    
+    background: linear-gradient(to right, #141515, #b21f1f, #fdbb2d);
+    width: 260px;
+
 }
 
-.texto-thumb{
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+.texto-thumb {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin-top: 10px;
     color: white;
 }
 
+.videoplay img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
 
 
 
 /* FOOTER */
 
 
-.logo-footer{
+.logo-footer {
     width: 30px;
     height: 30px;
     margin-left: 10px;
 }
 
-footer{
+footer {
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: black;
     height: 50px;
-    position: absolute;
+    position: fixed;
     width: 100%;
     bottom: 0;
     color: white;
+
 }
 
 
@@ -120,7 +160,7 @@ footer{
 
 /* VIDEOS */
 
-.texto-descricao{
+.texto-descricao {
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -128,7 +168,7 @@ footer{
 }
 
 
-.pagina-video{
+.pagina-video {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -136,7 +176,35 @@ footer{
 }
 
 
-.video{
-    height: 70vh;
+.video {
+    max-width: 1150px;
     margin: 10px;
+}
+
+.video video {
+    width: 90%;
+}
+
+@media screen and (max-width: 480px) {
+    .perfil {
+        position: absolute;
+        top: 5px;
+    }
+
+    .campo-busca {
+        position: absolute;
+        top: 50px;
+        right: 5px;
+        margin-right: 0;
+
+    }
+
+    .cabeçalho {
+        height: 150px;
+    }
+
+    .pagina-video{
+        margin-top: 250px;
+    }
+
 }
