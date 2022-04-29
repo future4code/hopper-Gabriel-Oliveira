@@ -9,6 +9,22 @@ const MainContainer = styled.div`
   align-items: center;
 `
 
+const ContainerAdd = styled.div`
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 20px;
+
+  input, button {
+    margin-top: 5px;
+  }
+
+  h1 {
+    color: #ee0979;
+  }
+`
+
 class App extends React.Component {
 
   state = {
@@ -68,39 +84,40 @@ class App extends React.Component {
 
 
   render() {
-    const listaDeUsuarios = this.state.usuarios.map((usuarios) => {
+    const listaDeUsuarios = this.state.usuarios.map((usuarios, index) => {
       return (
         <Post
           nomeUsuario={usuarios.nomeUsuario}
           fotoUsuario={usuarios.fotoUsuario}
           fotoPost={usuarios.fotoPost}
+          key={index}
         />
       )
     })
     return (
 
       <div>
-        <div>
+        <ContainerAdd>
           <h1>Adicionar Post</h1>
-          <div>
-            <input
-              value={this.state.valorInputNomeUsuario}
-              onChange={this.onChangeInputNomeUsuario}
-              placeholder={"Nome do Usuário"}
-            />
-            <input
-              value={this.state.valorInputFotoUsuario}
-              onChange={this.onChangeInputFotoUsuario}
-              placeholder={"Foto do Usuário"}
-            />
-            <input
-              value={this.state.valorInputFotoPost}
-              onChange={this.onChangeInputFotoPost}
-              placeholder={"Foto Post"}
-            />
-            <button onClick={this.novosPosts}>Adicionar</button>
-          </div>
-        </div>
+
+          <input
+            value={this.state.valorInputNomeUsuario}
+            onChange={this.onChangeInputNomeUsuario}
+            placeholder={"Nome do Usuário"}
+          />
+          <input
+            value={this.state.valorInputFotoUsuario}
+            onChange={this.onChangeInputFotoUsuario}
+            placeholder={"Foto do Usuário"}
+          />
+          <input
+            value={this.state.valorInputFotoPost}
+            onChange={this.onChangeInputFotoPost}
+            placeholder={"Foto Post"}
+          />
+          <button onClick={this.novosPosts}>Adicionar</button>
+
+        </ContainerAdd>
 
 
 
