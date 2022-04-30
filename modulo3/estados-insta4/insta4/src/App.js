@@ -63,7 +63,7 @@ class App extends React.Component {
     const novosPosts = [...this.state.usuarios, novoPost];
 
     this.setState({
-      pessoas: novosPosts,
+      usuarios: novosPosts,
       valorInputNomeUsuario: "",
       valorInputFotoUsuario: "",
       valorInputFotoPost: ""
@@ -84,13 +84,12 @@ class App extends React.Component {
 
 
   render() {
-    const listaDeUsuarios = this.state.usuarios.map((usuarios, index) => {
+    const listaDeUsuarios = this.state.usuarios.map((usuarios) => {
       return (
         <Post
           nomeUsuario={usuarios.nomeUsuario}
           fotoUsuario={usuarios.fotoUsuario}
           fotoPost={usuarios.fotoPost}
-          key={index}
         />
       )
     })
@@ -115,12 +114,8 @@ class App extends React.Component {
             onChange={this.onChangeInputFotoPost}
             placeholder={"Foto Post"}
           />
-          <button onClick={this.novosPosts}>Adicionar</button>
-
+          <button onClick={this.adicionaPost}>Adicionar</button>
         </ContainerAdd>
-
-
-
 
         <MainContainer>
           {listaDeUsuarios}
