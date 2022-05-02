@@ -4,6 +4,7 @@ import './App.css'
 import ChatList from "./componentes/ChatList";
 
 
+
 const AreaContatos = styled.div`
   display: flex;
   height: 100vh;
@@ -33,6 +34,10 @@ const Botoes = styled.div`
   justify-content: center;
   align-items: center;
   cursor: pointer;
+
+  img{
+    height: 25px;
+  }
 `
 
 const Pesquisa = styled.div`
@@ -55,6 +60,10 @@ const InputBusca = styled.div`
    outline: 0;
    background-color: transparent;
    margin-left: 10px;
+ }
+
+ img{
+   height: 17px;
  }
 `
 
@@ -97,19 +106,19 @@ export default () => {
 
         <CabecalhoContatos>
 
-          <HeaderAvatar src="https://bombyxplm.com/wp-content/uploads/2021/01/421-4213053_default-avatar-icon-hd-png-download.png" alt="Avatar" />
+          <HeaderAvatar src="https://img.ibxk.com.br/2019/02/17/17124052466014.jpg" alt="Avatar" />
 
           <HeaderBotao>
             <Botoes>
-              <img src="" alt="Status" />
+              <img src="img/story.png" alt="Status" />
             </Botoes>
 
             <Botoes>
-              <img src="" alt="NewMensage" />
+              <img src="img/chat.png" alt="NewMensage" />
             </Botoes>
 
             <Botoes>
-              <img src="" alt="TrêsPontos" />
+              <img src="img/tres-pontos.png" alt="TrêsPontos" />
             </Botoes>
           </HeaderBotao>
 
@@ -117,8 +126,8 @@ export default () => {
 
         <Pesquisa>
           <InputBusca>
-            <img src="/" alt="Icone de Pesquisa" />
-            <input type="search" placeholder="Procurar ou começar uma nova conversa." />
+            <img src="img/procurar.png" alt="Icone de Pesquisa" />
+            <input type="search" placeholder="Procurar ou começar uma nova conversa" />
           </InputBusca>
         </Pesquisa>
 

@@ -75,7 +75,7 @@ export default () => {
     return (
 
         <ItemLista>
-            <ImgAvatar src='https://bombyxplm.com/wp-content/uploads/2021/01/421-4213053_default-avatar-icon-hd-png-download.png' alt='' />
+            <ImgAvatar src='https://img.ibxk.com.br/2019/02/17/17124052466014.jpg' alt='' />
             <Linhas>
                 <Linha>
                     <Nome>Gabriel Oliveira</Nome>
