@@ -10,6 +10,10 @@ const ItemLista = styled.div`
     &:hover{
        background-color: #F5F5F5;
     }
+
+    &.active{
+        background-color: #EBEBEB;
+    }
 `
 
 const ImgAvatar = styled.img`
@@ -71,14 +75,16 @@ p{
 
 
 
-export default () => {
+export default ({onClick, active, data}) => {
     return (
 
-        <ItemLista>
-            <ImgAvatar src='https://img.ibxk.com.br/2019/02/17/17124052466014.jpg' alt='' />
+        <ItemLista 
+        className={`${active?'active':''}`} 
+        onClick={onClick}>
+            <ImgAvatar src={data.image} alt='' />
             <Linhas>
                 <Linha>
-                    <Nome>Gabriel Oliveira</Nome>
+                    <Nome>{data.title}</Nome>
                     <Data>4:54</Data>
                 </Linha>
 

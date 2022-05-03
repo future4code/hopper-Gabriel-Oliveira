@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import styled from 'styled-components'
 import './App.css'
 import ChatList from "./componentes/ChatList";
+import IntroChat from "./componentes/IntroChat";
+import ChatWindow from "./componentes/ChatWindow";
 
 
 
@@ -93,10 +95,20 @@ const HeaderBotao = styled.div`
   display: flex;
 `
 
+const AreaMensagens = styled.div`
+  flex: 1;
+`
+
 
 export default () => {
 
-  const [listMensagem, setChatList] = useState([{}, {}, {}, {},{}, {}, {}, {},{}, {}, {}, {}])
+  const [listMensagem, setChatList] = useState([
+    {chatId: 1, title: 'Gabriel Oliveira', image: 'https://img.ibxk.com.br/2019/02/17/17124052466014.jpg'},
+    {chatId: 2, title: 'Bárbara Claudino', image: 'https://img.ibxk.com.br/2019/02/17/17124052466014.jpg'},
+    {chatId: 3, title: 'Filipe Vidal', image: 'https://img.ibxk.com.br/2019/02/17/17124052466014.jpg'},
+    {chatId: 4, title: 'Zé Sinuca', image: 'https://img.ibxk.com.br/2019/02/17/17124052466014.jpg'}
+  ]);
+  const [activeChat, setActiveChat] = useState({});
 
   return (
 
@@ -135,6 +147,9 @@ export default () => {
           {listMensagem.map((item, key) => (
             <ChatList
               key={key}
+              data={item}
+              active={activeChat.chatId === listMensagem[key].chatId}
+              onClick={() => setActiveChat(listMensagem[key])}
             />
           ))}
         </Chat>
@@ -142,9 +157,15 @@ export default () => {
 
       </BarraLateral>
 
-      <div>
-        ...
-      </div>
+      <AreaMensagens>
+      
+      {activeChat.chatId !== undefined && <ChatWindow/>}
+      {activeChat.chatId === undefined && <IntroChat/>}
+      
+      
+      </AreaMensagens>      
+
+
 
 
     </AreaContatos>
