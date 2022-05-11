@@ -1,0 +1,12 @@
+.etapas{
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+margin-top: 150px;
+}
+.imgVerificado{
+    height: 100px;
+    width: 100px;
+    margin-top: 30px;
+}

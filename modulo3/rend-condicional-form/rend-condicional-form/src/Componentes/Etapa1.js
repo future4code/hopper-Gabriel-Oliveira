@@ -1,17 +1,12 @@
 import react from "react";
-import styled from "styled-components"
+import "./Etapa.css"
 
-const Main = styled.div`
-display: flex;
-flex-direction: column;
-align-items: center;
-`
 
 
 export default class Etapa1 extends react.Component {
     render() {
         return(
-        <div>
+        <div className="etapas">
             <h1>ETAPA 1 - DADOS GERAIS</h1>
             <h3>1. Qual o seu nome?</h3>
             <input type="text"></input>

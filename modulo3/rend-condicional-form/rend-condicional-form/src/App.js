@@ -3,14 +3,7 @@ import Etapa1 from './Componentes/Etapa1';
 import Etapa2 from './Componentes/Etapa2';
 import Etapa3 from './Componentes/Etapa3';
 import Final from './Componentes/Final';
-import styled from "styled-components"
-
-const Container = styled.div`
-display: flex;
-justify-content: center:
-flex-direction: center:
-align-items: center;
-`
+import "./App.css"
 
 
 export default class App extends react.Component {
@@ -43,9 +36,9 @@ export default class App extends react.Component {
 
   render() {
     return (
-      <div>
+      <div className="containerPrincipal">
         {this.qualEtapa()}
-        {this.state.etapa < 4 && <button onClick={this.onClickMudarEtapa}>Próxima Etapa</button>}
+        {this.state.etapa < 4 && <button className="myButton" onClick={this.onClickMudarEtapa}>Próxima Etapa</button>}
       </div>
     )
   }

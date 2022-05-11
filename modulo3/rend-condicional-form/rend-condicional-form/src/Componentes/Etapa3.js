@@ -5,7 +5,7 @@ export default class Etapa3 extends react.Component {
     render() {
         return(
 
-        <div>
+        <div className="etapas">
             <h1>ETAPA 3 - INFORMAÇÕES GERAIS DE ENSINO</h1>
             <h3>5. Porque você não terminou o curso de graduação?</h3>
             <input type="text"></input>

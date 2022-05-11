@@ -4,7 +4,7 @@ import react from "react";
 export default class Etapa2 extends react.Component {
     render() {
         return(
-        <div>
+        <div className="etapas">
             <h1>ETAPA 2 - INFORMAÇÕES DO ENSINO SUPERIOR</h1>
             <h3>5. Qual curso?</h3>
             <input type="text"></input>
