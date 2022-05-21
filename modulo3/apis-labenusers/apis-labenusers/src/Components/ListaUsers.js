@@ -32,8 +32,9 @@ export default class ListaUsers extends Component {
             }
         }).then(() => {
             this.pegarUser()
+            alert("Usuário excluido!")
         }).catch(() => {
-            alert("Não pode ser excluído")
+            alert("Usuário não pode ser excluído.")
         })
     }
 
@@ -41,11 +42,12 @@ export default class ListaUsers extends Component {
 
     render() {
         const renderedUsers = this.state.usuarios.map((user) =>{
-            return <p>{user.name} <button onClick={() => this.deletaUser(user.id)}>X</button></p>
+            return <li>{user.name} <button onClick={() => this.deletaUser(user.id)}>X</button></li>
         })
         return (
             <div>
                 {renderedUsers}
+                <hr/>
             </div>
         )
     }

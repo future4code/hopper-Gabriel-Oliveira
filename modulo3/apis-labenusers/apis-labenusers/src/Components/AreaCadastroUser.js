@@ -25,6 +25,7 @@ export default class AreaCadastroUser extends Component {
         }).catch(() => {
             alert("Não foi possível criar o usuário")
         })
+
     }
 
 
@@ -37,6 +38,7 @@ export default class AreaCadastroUser extends Component {
     onchangeEmail = (event) => {
         this.setState({ email: event.target.value })
     }
+    
 
 
     render() {
