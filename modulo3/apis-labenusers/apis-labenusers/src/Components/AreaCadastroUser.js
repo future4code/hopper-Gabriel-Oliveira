@@ -24,6 +24,8 @@ export default class AreaCadastroUser extends Component {
             alert("Usuário criado com sucesso")
         }).catch(() => {
             alert("Não foi possível criar o usuário")
+        }).finally(() => {
+            this.setState({ name: "", email: "" })
         })
 
     }
@@ -44,6 +46,7 @@ export default class AreaCadastroUser extends Component {
     render() {
         return (
             <div>
+                <h2>Tela Cadastro:</h2>
                 <input
                     placeholder="Nome"
                     value={this.state.name}
