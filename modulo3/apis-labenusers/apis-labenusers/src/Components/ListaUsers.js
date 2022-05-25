@@ -47,7 +47,7 @@ export default class ListaUsers extends Component {
         return (
             <div>
                 <h2>Lista de Usuários Cadastrados:</h2>
-                {renderedUsers}
+                <div>{renderedUsers}</div>
                 <hr/>
             </div>
         )

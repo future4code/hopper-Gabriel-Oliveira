@@ -6,7 +6,14 @@ import styled from 'styled-components'
 
 const ContainerPrincipalApp = styled.div`
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  margin-top: 300px;
+`
+
+const BotaoPagina = styled.button`
+  width: 150px;
 `
 
 export default class App extends React.Component {
@@ -25,12 +32,13 @@ export default class App extends React.Component {
 
   render() {
     return (
-      <>
-      <button onClick={this.trocarPagina}>Trocar de Página</button>
-      <hr/>
-      { this.state.paginaEmExibicao === "AreaCadastroUser" ? <AreaCadastroUser /> : <ListaUsers /> }
-    
-      </>
+      <ContainerPrincipalApp>
+        { this.state.paginaEmExibicao === "AreaCadastroUser" ? <AreaCadastroUser /> : <ListaUsers /> }
+        <hr/>
+        <BotaoPagina onClick={this.trocarPagina}>Trocar de Página</BotaoPagina>
+      </ContainerPrincipalApp>
+      
+      
     )
   }
 }
