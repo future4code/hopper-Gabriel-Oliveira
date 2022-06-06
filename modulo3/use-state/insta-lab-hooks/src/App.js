@@ -17,6 +17,11 @@ const App = () => {
         fotoUsuario={'https://picsum.photos/50/50'}
         fotoPost={'https://picsum.photos/200/150'}
       />
+            <Post
+        nomeUsuario={'Usuário'}
+        fotoUsuario={'https://picsum.photos/50/50'}
+        fotoPost={'https://picsum.photos/200/150'}
+      />
     </AppContainer>
   );
 }
