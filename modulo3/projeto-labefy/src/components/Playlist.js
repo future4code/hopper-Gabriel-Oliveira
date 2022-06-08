@@ -1,5 +1,5 @@
 import React from "react";
-import axios from "axios";
+import axios from "axios"
 import "./Playlist.css"
 
 
@@ -130,7 +130,7 @@ export default class CreatePlaylist extends React.Component {
             })
             .catch(() => {
                 alert('Ops, Erro ao adicionar a Música!')
-            })
+            }) 
     }
 
     selecionaPlaylist = id => {
