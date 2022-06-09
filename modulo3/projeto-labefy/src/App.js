@@ -3,12 +3,22 @@ import Playlist from "./components/Playlist";
 
 
 
-export default class App extends React.Component{
-  render(){
-    return(
-      <div>
-        <Playlist/>
-      </div>
-    )
-  }
+export default function App(){
+  return(
+    <>
+    <Playlist/>
+    </>
+  )
 }
+
+
+
+// export default class App extends React.Component{
+//   render(){
+//     return(
+//       <div>
+//         <Playlist/>
+//       </div>
+//     )
+//   }
+// }
