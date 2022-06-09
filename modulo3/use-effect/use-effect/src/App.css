@@ -2,3 +2,12 @@
   font-family: sans-serif;
   text-align: center;
 }
+.img-ident{
+  margin-right: 5px;
+  height: 30px
+}
+.itens{
+display: flex;
+justify-content: center;
+align-items: center;
+}
