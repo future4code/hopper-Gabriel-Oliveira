@@ -39,7 +39,7 @@ export default function TelaDeMatches() {
                     </div>
                 )
             })}
-            <button>Voltar</button>
+            <button>Retornar</button>
         </div>
     )
 }
