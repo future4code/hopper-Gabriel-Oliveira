@@ -1,0 +1,104 @@
+.App {
+    font-family: sans-serif;
+    text-align: center;
+  }
+  
+  .Container {
+    width: 400px;
+    height: 600px;
+    position: fixed;
+    top: 5%;
+    left: 35%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ff69b4;
+    border-radius: 30px;
+    align-items: center;
+    background-color: #ffb6c1;
+  }
+  
+  .imagens-profile {
+    height: 200px;
+    width: 200px;
+    border-radius: 5px;
+  }
+  
+  .imagem-button:hover {
+    transform: scale(1.15);
+  }
+  
+  .container-logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .titulo-logo {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    color: #ff69b4;
+  }
+  
+  .logo {
+    height: 50px;
+    margin-right: 5px;
+  }
+  
+  .button-matche {
+    border: none;
+    background-color: #ffb6c1;
+    cursor: pointer;
+    margin: 10px 5px;
+  }
+  
+  .imagem-button {
+    inset: 0;
+    object-fit: cover;
+    transition: transform 0.75s;
+    height: 60px;
+    width: 60px;
+  }
+  
+  .imgCardMatch {
+    display: block;
+  }
+  
+  .imgCardMatch img {
+    height: 70%;
+    width: 50px;
+    margin-right: 3px;
+    border-radius: 50%;
+  }
+  
+  .imgCardMatch li {
+    display: flex;
+    margin-top: 10px;
+    margin-left: -180px;
+    height: 70px;
+    cursor: pointer;
+  }
+  
+  .imgCardMatch li:hover {
+    transform: scale(1.15);
+  }
+  
+  .imgCardMatch li p {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    color: white;
+  }
+  
+  .botao-voltar {
+    border: none;
+    background-color: #ffb6c1;
+    cursor: pointer;
+    margin-left: 20px;
+  }
+  
+  .botao-voltar img {
+    height: 30px;
+    width: 30px;
+  }
+  
+  .botao-voltar:hover {
+    transform: scale(1.15);
+  }
+  
