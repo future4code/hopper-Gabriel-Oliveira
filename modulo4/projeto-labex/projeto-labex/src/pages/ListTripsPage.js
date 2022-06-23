@@ -13,7 +13,7 @@ const ListTripsPage = () => {
   const getTrips = () => {
     axios
       .get(
-        "https://us-central1-labenu-apis.cloudfunctions.net/labeX/gabriel/trips"
+        "https://us-central1-labenu-apis.cloudfunctions.net/labeX/gabriel-oliveira-hopper/trips"
       )
       .then((response) => {
         setTrips(response.data.trips);
@@ -24,17 +24,12 @@ const ListTripsPage = () => {
       });
   };
 
-
-
-
-
   return (
     <div className="container-listTrips">
       <div className="iconeAndtitulo-trips">
-        <h1 className="titulo-trips" >VIAGENS DISPONÍVEIS</h1>
-        <img className="icone-trips" src="/IMG/foguete.png" />
+        <h1 className="titulo-trips">VIAGENS DISPONÍVEIS</h1>
+        <img className="icone-trips" src="/IMG/foguete.png" alt="ícone" />
       </div>
-
       <div className="buttons-listTrips">
         <button
           className="btn-inscrever"
@@ -50,27 +45,19 @@ const ListTripsPage = () => {
       {trips.map((trip) => {
         return (
           <div className="list-trips">
-            <div class="blog_post">
-              <div class="container_copy">
+            <div className="blog_post">
+              <div className="container_copy">
                 <h1 className="text-titulo-trips">{trip.name}</h1>
                 <h2 className="text-planeta-list">Planeta: {trip.planet}</h2>
-                <h3 className="text-dateAndDuration-trips">Data: {trip.date}</h3>
-                <h3 className="text-dateAndDuration-trips">Duração: {trip.durationInDays} Dias</h3>
+                <h3 className="text-dateAndDuration-trips"> Data: {trip.date}</h3>
+                <h3 className="text-dateAndDuration-trips"> Duração: {trip.durationInDays} Dias </h3>
                 <p className="text-descrition-trips">{trip.description}</p>
               </div>
             </div>
-
           </div>
-        )
+        );
       })}
-
-
-
     </div>
-
-
-
-
   );
 };
 

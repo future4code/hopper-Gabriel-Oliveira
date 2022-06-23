@@ -15,9 +15,10 @@ export const LoginPage = () => {
     setPassword(event.target.value);
   };
 
-  const onSubmitLogin = () => {
+  const onSubmitLogin = (event) => {
+    event.preventDefault()
     const URL =
-      "https://us-central1-labenu-apis.cloudfunctions.net/labeX/Gabriel/login";
+      "https://us-central1-labenu-apis.cloudfunctions.net/labeX/gabriel-oliveira-hopper/login";
 
     const body = {
       email: email,
@@ -27,32 +28,57 @@ export const LoginPage = () => {
     axios
       .post(URL, body)
       .then((res) => {
-        console.log(res.data.token);
+        console.log(res.data);
         localStorage.setItem("token", res.data.token);
         navigate("/admin/trips/list");
       })
       .catch((err) => {
         alert(err.response.data.message);
+      })
+      .finally(() => {
+        setEmail("");
+        setPassword("");
       });
   };
-  return (
-    <div>
-      <h1>LOGIN PAGE</h1>
-      <input
-        placeholder="email"
-        type="email"
-        value={email}
-        onChange={onChangeEmail}
-      />
-      <input
-        placeholder="password"
-        type="password"
-        value={password}
-        onChange={onChangePassword}
-      />
-      <button className="btn-login" onClick={onSubmitLogin}>LOGIN</button>
-      <button className="btn-voltar" onClick={() => navigate("/")}>VOLTAR</button>
 
+  
+  return (
+    <div className="container-loginPage">
+      <div className="box">
+        <form onSubmit={onSubmitLogin}>
+          <div className="iconeAndTitulo-login">
+            <img
+              src="IMG/logo.png"
+              className="img-icone-login"
+              alt="icone-logo"
+            />
+          </div>
+          <div className="input-container">
+            <input
+              type="email"
+              onChange={onChangeEmail}
+              value={email}
+              required />
+            <label>Email</label>
+          </div>
+          <div className="input-container">
+            <input
+              type="password"
+              onChange={onChangePassword}
+              value={password}
+              required />
+            <label>Password</label>
+          </div>
+          <div className="btns-login">
+            <button className="btn-login">
+              LOGIN
+            </button>
+            <button className="btn-voltar" onClick={() => navigate("/")}>
+              VOLTAR
+            </button>
+          </div>
+        </form>
+      </div>
     </div>
   );
 };

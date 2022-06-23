@@ -411,3 +411,77 @@ html {
   margin-bottom: 5rem;
 }
 
+
+/* LOGIN PAGE */
+
+.container-loginPage {
+  background-image: url("../public/IMG/home.jpg");
+  background-position: center;
+  background-origin: content-box;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  font-family: "Lucida Console", Courier, monospace;
+}
+.box {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.89);
+  border-radius: 3px;
+  padding: 70px 100px;
+}
+.input-container {
+  position: relative;
+  margin-bottom: 25px;
+}
+.input-container label {
+  position: absolute;
+  top: -8px;
+  left: 0px;
+  color: rgb(255, 255, 255);
+  transition: all 0.5s ease-in-out;
+}
+.input-container input {
+  border: 0;
+  border-bottom: 1px solid #555;
+  background: transparent;
+  width: 100%;
+  padding: 8px 0 5px 0;
+  font-size: 14px;
+  color: #fff;
+  font-family: "Lucida Console", Courier, monospace;
+}
+.input-container input:focus {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #e831ff;
+}
+
+.input-container input:focus ~ label,
+.input-container input:valid ~ label {
+  top: -12px;
+  font-size: 12px;
+}
+
+.btns-login {
+  display: flex;
+  justify-content: space-between;
+  width: 30vw;
+}
+
+.iconeAndTitulo-login {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-icone-login {
+  height: 10rem;
+  margin-top: -80px;
+}
+
+
