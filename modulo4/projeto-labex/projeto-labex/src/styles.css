@@ -485,3 +485,27 @@ html {
 }
 
 
+
+/* AREA ADM */
+
+
+
+.container_copy_areaAdm {
+  padding: 3rem 4rem 3rem 4rem;
+}
+
+.blog_postAdm {
+  background: #fff;
+  width: 550px;
+  height: 150px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 2rem rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+
+
+
+
+
+
