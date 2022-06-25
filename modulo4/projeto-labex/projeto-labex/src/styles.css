@@ -488,10 +488,11 @@ html {
 
 /* AREA ADM */
 
-
-
 .container_copy_areaAdm {
   padding: 3rem 4rem 3rem 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .blog_postAdm {
@@ -503,7 +504,20 @@ html {
   position: relative;
 }
 
+.blog_postAdm:hover {
+  background-color: rgb(203, 200, 200);
+}
 
+.img-excluir-adm {
+  width: 40px;
+  cursor: pointer;
+}
+
+.img-excluir-adm:hover {
+  -webkit-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  transform: scale(1.3);
+}
 
 
 
