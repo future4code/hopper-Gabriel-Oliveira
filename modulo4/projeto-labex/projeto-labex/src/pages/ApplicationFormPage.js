@@ -126,7 +126,7 @@ const ApplicationFormPage = () => {
             <button className="btn-criar">CRIAR</button>
             <button
               className="btn-voltar"
-              onClick={() => navigate("/admin/trips/list")}
+              onClick={() => navigate("/")}
             >
               VOLTAR
             </button>
