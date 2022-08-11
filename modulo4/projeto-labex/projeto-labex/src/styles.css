@@ -1,0 +1,555 @@
+/* //BOTÃO VIAGEM */
+
+.btn-viagem {
+  width: 200px;
+  height: 40px;
+  background-color: #3b2cd0;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  font-family: "Lucida Console", Courier, monospace;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-viagem:hover {
+  background-color: #e831ff;
+}
+
+.btn-viagem::after {
+  content: "";
+  display: block;
+
+  width: 0;
+  height: 24px;
+  overflow: hidden;
+  background-image: url("../public/IMG/viagens.png");
+  background-size: cover;
+
+  transition: width 200ms, margin-left 200ms;
+}
+
+.btn-viagem:is(:hover, :focus)::after {
+  width: 24px;
+  margin-left: 8px;
+}
+
+/* BOTÃO ADM */
+
+.btn-adm {
+  width: 200px;
+  height: 40px;
+  background-color: #3b2cd0;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  font-family: "Lucida Console", Courier, monospace;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-adm:hover {
+  background-color: #e831ff;
+}
+
+.btn-adm::after {
+  content: "";
+  display: block;
+
+  width: 0;
+  height: 24px;
+  overflow: hidden;
+  background-image: url("../public/IMG/adm.png");
+  background-size: cover;
+
+  transition: width 200ms, margin-left 200ms;
+}
+
+.btn-adm:is(:hover, :focus)::after {
+  width: 24px;
+  margin-left: 8px;
+}
+
+/* BOTÃO INSCREVER-SE */
+
+.btn-inscrever {
+  width: 200px;
+  height: 40px;
+  background-color: #3b2cd0;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  font-family: "Lucida Console", Courier, monospace;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-inscrever:hover {
+  background-color: #e831ff;
+  color: black;
+}
+
+.btn-inscrever::after {
+  content: "";
+  display: block;
+
+  width: 0;
+  height: 24px;
+  overflow: hidden;
+  background-image: url("../public/IMG/inscrever.png");
+  background-size: cover;
+
+  transition: width 200ms, margin-left 200ms;
+}
+
+.btn-inscrever:is(:hover, :focus)::after {
+  width: 24px;
+  margin-left: 8px;
+}
+
+/* BOTÃO VOLTAR */
+
+.btn-voltar {
+  width: 200px;
+  height: 40px;
+  background-color: #3b2cd0;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  font-family: "Lucida Console", Courier, monospace;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-voltar:hover {
+  background-color: #e831ff;
+  color: black;
+}
+
+.btn-voltar::after {
+  content: "";
+  display: block;
+
+  width: 0;
+  height: 24px;
+  overflow: hidden;
+  background-image: url("../public/IMG/return.png");
+  background-size: cover;
+
+  transition: width 200ms, margin-left 200ms;
+}
+
+.btn-voltar:is(:hover, :focus)::after {
+  width: 24px;
+  margin-left: 8px;
+}
+
+/* BOTÃO LOGIN */
+
+.btn-login {
+  width: 200px;
+  height: 40px;
+  background-color: #3b2cd0;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  font-family: "Lucida Console", Courier, monospace;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-login:hover {
+  background-color: #e831ff;
+  color: black;
+}
+
+.btn-login::after {
+  content: "";
+  display: block;
+
+  width: 0;
+  height: 24px;
+  overflow: hidden;
+  background-image: url("../public/IMG/login.png");
+  background-size: cover;
+
+  transition: width 200ms, margin-left 200ms;
+}
+
+.btn-login:is(:hover, :focus)::after {
+  width: 24px;
+  margin-left: 8px;
+}
+
+/* BOTÃO CRIAR */
+
+.btn-criar {
+  width: 200px;
+  height: 40px;
+  background-color: #3b2cd0;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  font-family: "Lucida Console", Courier, monospace;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-criar:hover {
+  background-color: #e831ff;
+  color: black;
+}
+
+.btn-criar::after {
+  content: "";
+  display: block;
+
+  width: 0;
+  height: 24px;
+  overflow: hidden;
+  background-image: url("../public/IMG/criar.png");
+  background-size: cover;
+
+  transition: width 200ms, margin-left 200ms;
+}
+
+.btn-criar:is(:hover, :focus)::after {
+  width: 24px;
+  margin-left: 8px;
+}
+
+/* BOTÃO-LOGOUT */
+
+.btn-logout {
+  width: 200px;
+  height: 40px;
+  background-color: #3b2cd0;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  font-family: "Lucida Console", Courier, monospace;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-logout:hover {
+  background-color: #e831ff;
+  color: black;
+}
+
+.btn-logout::after {
+  content: "";
+  display: block;
+
+  width: 0;
+  height: 24px;
+  overflow: hidden;
+  background-image: url("../public/IMG/logout.png");
+  background-size: cover;
+
+  transition: width 200ms, margin-left 200ms;
+}
+
+.btn-logout:is(:hover, :focus)::after {
+  width: 24px;
+  margin-left: 8px;
+}
+
+/* GLOBAL */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* HOMEPAGE */
+
+.container-homepage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  height: 100vh;
+}
+
+.img-fundo {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  z-index: 0;
+}
+
+.img-logo {
+  display: flex;
+  z-index: 2;
+  margin-bottom: 40px;
+  width: 400px;
+  height: 400px;
+}
+
+.buttons-home {
+  display: flex;
+  justify-content: space-between;
+  width: 35vw;
+  z-index: 2;
+  margin-bottom: 200px;
+}
+  
+
+
+/* LIST TRIPS */
+
+
+
+
+html {
+  font-size: 12px;
+}
+
+.list-trips {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+.blog_post {
+  background: #fff;
+  width: 550px;
+  height: 250px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 2rem rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+.blog_post:hover{
+  background-color: rgb(203, 200, 200);
+}
+
+
+.container_copy {
+  padding: 6rem 4rem 5rem 4rem;
+}
+
+
+.text-planeta-list {
+  margin: 0 0 0.5rem 0;
+  color: #999;
+  font-size: 1.2rem;
+  font-family: "Lucida Console", Courier, monospace;
+}
+
+.text-titulo-trips {
+  margin: 0 0 1rem 0;
+  font-size: 2.0rem;
+  letter-spacing: 0.5px;
+  color: rgb(0, 0, 0);
+  font-family: "Lucida Console", Courier, monospace;
+}
+
+.text-descrition-trips {
+  margin: 0 0 4.5rem 0;
+  font-size: 1.5rem;
+  line-height: 1.45;
+  color: rgb(0, 0, 0);
+  font-family: "Lucida Console", Courier, monospace;
+}
+
+.text-dateAndDuration-trips{
+  line-height: 1.45;
+  color: rgb(0, 0, 0);
+  font-family: "Lucida Console", Courier, monospace;
+}
+
+.iconeAndtitulo-trips{
+  display: flex;
+  align-items:center;
+}
+
+
+.icone-trips{
+  width: 4rem;
+  height: 4rem;
+  margin-bottom: -60px;
+}
+
+
+.titulo-trips{
+  margin-top: 5rem;
+  color: rgb(0, 0, 0);
+  font-family: "Lucida Console", Courier, monospace;
+}
+
+.container-listTrips{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttons-listTrips{
+  display: flex;
+  justify-content: space-evenly;
+  width: 35vw;
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+}
+
+
+/* LOGIN PAGE */
+
+.container-loginPage {
+  background-image: url("../public/IMG/home.jpg");
+  background-position: center;
+  background-origin: content-box;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  font-family: "Lucida Console", Courier, monospace;
+}
+.box {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.89);
+  border-radius: 3px;
+  padding: 70px 100px;
+}
+.input-container {
+  position: relative;
+  margin-bottom: 25px;
+}
+.input-container label {
+  position: absolute;
+  top: -8px;
+  left: 0px;
+  color: rgb(255, 255, 255);
+  transition: all 0.5s ease-in-out;
+}
+.input-container input {
+  border: 0;
+  border-bottom: 1px solid #555;
+  background: transparent;
+  width: 100%;
+  padding: 8px 0 5px 0;
+  font-size: 14px;
+  color: #fff;
+  font-family: "Lucida Console", Courier, monospace;
+}
+.input-container input:focus {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #e831ff;
+}
+
+.input-container input:focus ~ label,
+.input-container input:valid ~ label {
+  top: -12px;
+  font-size: 12px;
+}
+
+.btns-login {
+  display: flex;
+  justify-content: space-between;
+  width: 30vw;
+}
+
+.iconeAndTitulo-login {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-icone-login {
+  height: 10rem;
+  margin-top: -80px;
+}
+
+
+
+/* AREA ADM */
+
+.container_copy_areaAdm {
+  padding: 3rem 4rem 3rem 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.blog_postAdm {
+  background: #fff;
+  width: 550px;
+  height: 150px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 2rem rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+.blog_postAdm:hover {
+  background-color: rgb(203, 200, 200);
+}
+
+.img-excluir-adm {
+  width: 40px;
+  cursor: pointer;
+}
+
+.img-excluir-adm:hover {
+  -webkit-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  transform: scale(1.3);
+}
+
+
+/* CREATE TRIP PAGE */
+
+.select-planetas {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.select-planetas label {
+  position: absolute;
+  top: -18px;
+  left: 0px;
+  color: rgb(255, 255, 255);
+}
+
+.select-planetas select {
+  border: 0;
+  border-bottom: 1px solid #555;
+  background: transparent;
+  width: 100%;
+  padding: 8px 0 5px 0;
+  font-size: 14px;
+  color: rgb(255, 255, 255);
+  font-family: "Lucida Console", Courier, monospace;
+}
+
+.select-planetas select option {
+  background-color: rgba(0, 0, 0, 0.89);
+}
+
+
+
+
+
