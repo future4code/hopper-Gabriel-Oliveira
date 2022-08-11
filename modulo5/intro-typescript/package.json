@@ -1,0 +1,27 @@
+{
+  "name": "intro-typescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "exeI": "tsc && node ./build/exeI.js",
+    "exeII": "tsc && node ./build/exeII.js",
+    "exeIII": "tsc && node ./build/exeIII.js",
+    "exeIV": "tsc && node ./build/exeIV.js",
+    "exeV": "tsc && node ./build/exeV.js",
+    "exeVI": "tsc && node ./build/exeVI.js",
+    "exeVII": "tsc && node ./build/exeVII.js",
+    "exeVIII": "tsc && node ./build/exeVIII.js",
+    "exeIX": "tsc && node ./build/exeIX.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "typescript": "^4.7.4"
+  },
+  "devDependencies": {
+    "@types/node": "^18.7.1"
+  }
+}
