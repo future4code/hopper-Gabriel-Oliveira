@@ -1,0 +1,19 @@
+{
+  "name": "aprofundamento-typescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "exeI": "tsc && node ./build/exeI.js",
+    "exeII": "tsc && node ./build/exeII.js",
+    "exeIII": "tsc && node ./build/exeIII.js",
+    "exeIV": "tsc && node ./build/exeIV.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "typescript": "^4.7.4"
+  }
+}
