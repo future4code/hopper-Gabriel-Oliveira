@@ -4,7 +4,7 @@ import { getAllUsers } from "./endpoints/getAllUsers";
 import { getAllUsersType } from "./endpoints/getAllUsersType";
 import { getAllByOrder } from "./endpoints/getAllByOrder";
 import { getAllByPage } from "./endpoints/getAllByPage";
-// import { getAllByFilters } from "./endpoints/getAllByFilters";
+import { getAllByFilters } from "./endpoints/getAllByFilters";
 
 
 export const app = express();
@@ -22,7 +22,7 @@ app.get("/getEmployeesByOrder", getAllByOrder);
 
 app.get("/getAllByPage", getAllByPage);
 
-// app.get("/getAllByFilters", getAllByFilters);
+app.get("/getAllByFilters", getAllByFilters);
 
 
 
