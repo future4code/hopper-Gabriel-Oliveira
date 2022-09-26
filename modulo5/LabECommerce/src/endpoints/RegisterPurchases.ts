@@ -4,7 +4,7 @@ import { Purchases } from "../types/types";
 
 
 
-export const RegisterPurchases = async (req: Request, res: Response): Promise<void> => {
+export const registerPurchases = async (req: Request, res: Response): Promise<void> => {
     try {
         let statusCode = 400
         const { user_id, product_id, quantity } = req.body;
