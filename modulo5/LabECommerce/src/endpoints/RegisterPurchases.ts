@@ -20,7 +20,7 @@ export const registerPurchases = async (req: Request, res: Response): Promise<vo
             throw new Error("Parâmetro 'user_id', 'product_id' ou 'quantity' não informado.");
         }
 
-        if(typeof user_id && typeof product_id !== "string"){
+        if(typeof user_id  !== "string" && typeof product_id !== "string"){
             statusCode = 422
             throw new Error("Parâmetro 'user_id' e 'product_id' precisam ser do tipo string.");
         }
