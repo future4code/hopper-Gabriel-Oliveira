@@ -10,7 +10,7 @@ export const getUserPurchases = async (req: Request, res: Response): Promise<voi
 
         const user_id = req.params.user_id
 
-        const search = await connection.raw(`
+        const [search] = await connection.raw(`
         SELECT * FROM labecommerce_users 
         JOIN labecommerce_purchases ON labecommerce_purchases.user_id = labecommerce_users.id
         WHERE labecommerce_users.id = "${user_id}";
