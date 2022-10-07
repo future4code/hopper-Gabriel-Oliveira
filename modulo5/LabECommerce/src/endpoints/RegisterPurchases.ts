@@ -9,7 +9,7 @@ export const registerPurchases = async (req: Request, res: Response): Promise<vo
         let statusCode = 400
         const { user_id, product_id, quantity } = req.body;
 
-        const checkUser = await connection.raw(`
+        const [checkUser] = await connection.raw(`
         SELECT * FROM labecommerce_users
         WHERE id = "${user_id}"
         `)
