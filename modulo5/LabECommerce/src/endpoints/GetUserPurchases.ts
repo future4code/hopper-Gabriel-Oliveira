@@ -18,7 +18,7 @@ export const getUserPurchases = async (req: Request, res: Response): Promise<voi
 
 
         
-    if (search[0].length < 1)  {
+    if (search.length < 1)  {
         throw new Error ("Usuário não encontrado.")
       }
 
