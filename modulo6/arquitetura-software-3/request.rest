@@ -1,0 +1,30 @@
+POST http://localhost:3003/user/create
+Content-Type: application/json
+
+{
+    "name": "teste2",
+    "email": "email2@email.com",
+    "password": "23432535"
+}
+
+
+###
+GET http://localhost:3003/user/getAll
+
+
+
+###
+POST http://localhost:3003/movies/create
+Content-Type: application/json
+
+{
+    "title": "O Telefone Preto",
+    "description": "Finney Shaw, de 13 anos, é sequestrado por um sádico assassino mascarado e mantido em um porão à prova de som. Até que um telefone desconectado na parede começa a tocar, e ele logo descobre que pode ouvir as vozes das vítimas anteriores do maníaco.",
+    "duration_in_minutes": 102,
+    "year_of_release": 2022
+
+}
+
+
+###
+GET http://localhost:3003/movies/getAll
