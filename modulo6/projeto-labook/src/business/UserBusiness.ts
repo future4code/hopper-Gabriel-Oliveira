@@ -11,7 +11,7 @@ export class UserBusiness {
     
    
     
-    if (!name || !email || password) {
+    if (!name || !email || !password) {
       throw new Error("Dados Inválidos.");
     }
 

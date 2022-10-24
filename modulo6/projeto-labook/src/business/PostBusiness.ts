@@ -5,8 +5,8 @@ import { generateId } from "../services/GenerateId";
 
 export class PostBusiness {
     async create(input: createPostDTO): Promise<void>{
-        const {photo, description, type, authorId} = input
-        if(!photo || !description || !type || authorId){
+        const {photo, description, type, author_id} = input
+        if(!photo || !description || !type || !author_id){
             throw new Error("Dados Inválidos.");  
         }
 
@@ -18,7 +18,15 @@ export class PostBusiness {
             photo,
             description,
             type,
-            authorId
+            author_id
         })
+    }
+
+
+    public async get(id: string) {
+        const postDatabase = new PostsDataBase();
+        const result = await postDatabase.get(id);
+
+        return result
     }
 }

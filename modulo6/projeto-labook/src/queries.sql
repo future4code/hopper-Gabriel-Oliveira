@@ -1,3 +1,4 @@
+-- Active: 1665681304438@@35.226.146.116@3306@Hopper-4313967-gabriel-oliveira
       CREATE TABLE IF NOT EXISTS labook_users(
          id VARCHAR(255) PRIMARY KEY,
          name VARCHAR(255) NOT NULL,

@@ -10,8 +10,8 @@ export class Posts {
         private photo: string,
         private description: string,
         private type: POST_TYPES,
-        private createdAt: Date,
-        private authorId: string
+        private created_at: Date,
+        private author_id: string
     ) { }
 
 
@@ -32,11 +32,11 @@ export class Posts {
     }
 
     getCreatedAt(){
-        return this.createdAt
+        return this.created_at
     }
 
     getAuthorId(){
-        return this.authorId
+        return this.author_id
     }
 
 
@@ -57,11 +57,11 @@ export class Posts {
     }
 
     setCreatedAt(newCreatedAt: Date){
-        this.createdAt = newCreatedAt
+        this.created_at = newCreatedAt
     }
 
     setAuthorId(newAuthorId: string){
-        this.authorId = newAuthorId
+        this.author_id = newAuthorId
     }
 
  }
