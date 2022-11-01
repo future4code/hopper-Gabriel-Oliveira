@@ -1,0 +1,30 @@
+POST http://localhost:3003/user/create
+Content-Type: application/json
+
+{
+    "name": "teste",
+    "email": "email@email.com",
+    "password": "23432535"
+}
+
+
+###
+GET http://localhost:3003/user/getAll
+
+
+
+###
+POST http://localhost:3003/movies/create
+Content-Type: application/json
+
+{
+    "title": "Rio",
+    "description": "Capturada por contrabandistas de animais quando tinha acabado de nascer, a arara Blu nunca aprendeu a voar e vive uma vida domesticada feliz em Minnesota, nos Estados Unidos, com sua dona, Linda. Blu pensa que é a última arara de sua espécie. Mas quando descobrem que Jewel, uma fêmea, vive no Rio de Janeiro, Blu e Linda vão ao seu encontro. Os contrabandistas capturam Blu e Jewel, mas as aves escapam e começam uma aventura arriscada rumo à liberdade.",
+    "duration_in_minutes": 96,
+    "year_of_release": 2011
+
+}
+
+
+###
+GET http://localhost:3003/movies/getAll
