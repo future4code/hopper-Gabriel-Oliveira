@@ -1,0 +1,14 @@
+POST http://localhost:3003/createUser
+Content-Type: application/json
+
+{
+    "email": "mauricio@gmail.com",
+    "name": "Maurício Gonçalves",
+    "password": "123456"
+}
+
+###
+GET http://localhost:3003/all
+
+###
+DELETE http://localhost:3003/87858455
