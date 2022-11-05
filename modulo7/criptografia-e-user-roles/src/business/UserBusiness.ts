@@ -16,6 +16,9 @@ import { GetTokenData } from "../services/GetTokenData";
 import { generateId } from "../services/GenerateId";
 import { generateToken } from "../services/GenerateToken";
 import { ValidateEmail } from "../services/ValidateEmail";
+import { HashManager } from "../services/HashManager";
+
+const hashManager = new HashManager();
 
 export class UserBusiness {
   public signUp = async (input: InputSignUpDTO) => {
@@ -33,11 +36,12 @@ export class UserBusiness {
       }
 
       const id: string = generateId();
+      const hashPassword: string = await hashManager.hash(password);
 
       const user: User = {
         id,
         email,
-        password,
+        password: hashPassword,
       };
 
       const userDataBase = new UserDataBase();
@@ -68,8 +72,15 @@ export class UserBusiness {
       if (!user) {
         throw new UserNotFound();
       }
-      if (user.password !== password) {
+
+      const isValidPassword: boolean = await hashManager.compare(
+        password,
+        user.password
+      );
+
+      if(!isValidPassword){
         throw new InvalidPassword();
+        
       }
       const token = generateToken({ id: user.id });
       return token;
@@ -93,11 +104,12 @@ export class UserBusiness {
       }
 
       const { id } = GetTokenData(token);
+      const hashPassword: string = await hashManager.hash(password);
 
       const editUser: EditUserDTO = {
         id,
         email,
-        password,
+        password: hashPassword,
       };
 
       const userDataBase = new UserDataBase();

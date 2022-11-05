@@ -44,7 +44,7 @@ export class UserDataBase extends BaseDatabase {
   public getUserById = async (id: string) => {
     try {
       const result = await UserDataBase.connection(TABLE_USERS)
-        .select("id", "email")
+        .select("id", "email", "password")
         .where({ id });
 
       return result;
