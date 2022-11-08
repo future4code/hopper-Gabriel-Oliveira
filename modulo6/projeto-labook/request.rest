@@ -1,0 +1,45 @@
+//CREATE USER
+POST http://localhost:3003/user/create 
+Content-Type: application/json
+
+{
+    "name": "Bárbara Zélia",
+    "email": "baat@gmail.com",
+    "password": "12345uguagusg"
+}
+
+
+###
+//CREATE POSTS
+POST http://localhost:3003/posts/create
+Content-Type: application/json
+
+{
+    "photo": "https://img.freepik.com/fotos-gratis/bela-foto-de-um-corpo-d-agua-com-ondas-do-mar_181624-29582.jpg?w=996&t=st=1666455292~exp=1666455892~hmac=27d95c79946981edd64de6c370790be6f7715741efbdf324a48e9869179faeaf",
+    "description": "A mar...",
+    "type": "normal",
+    "author_id": "032c3dc7-f0fd-4e08-a1bc-d024ed33a2c8"
+
+}
+
+
+###
+//GET POST BY ID
+GET http://localhost:3003/posts/get/e46101f1-08f9-42a4-ab23-a9e449c3db21
+
+
+
+###
+//MAKE FRIEND SHIP
+POST http://localhost:3003/friend/create
+Content-Type: application/json
+
+{
+    "id_user": "032c3dc7-f0fd-4e08-a1bc-d024ed33a2c8",
+    "id_friend": "16fceb87-ad0f-4ba6-8df0-00e5f7816712"
+}
+
+
+###
+//UNFRIEND
+DELETE http://localhost:3003/friend/delete/032c3dc7-f0fd-4e08-a1bc-d024ed33a2c8
