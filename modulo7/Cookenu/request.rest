@@ -1,0 +1,48 @@
+//CREATE USER
+POST http://localhost:3003/user/signup
+Content-Type: application/json
+
+
+{
+    "name": "Gabriel Oliveira",
+    "email": "gabriel@gmail.com",
+    "password": "gab123",
+    "role": "ADMIN"
+}
+
+###
+// LOGIN 
+POST http://localhost:3003/user/login
+Content-Type: application/json
+
+{
+    "email": "gabriel@gmail.com",
+    "password": "gab123"
+
+}
+
+### 
+//GET PROFILE
+GET http://localhost:3003/user/profile
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjUxYjE1MDVhLTBhZTMtNDAwYy04YzMwLTA3MTg0NGYyZTA2NyIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTY2ODM5MDg5MSwiZXhwIjoxNjY4MzkxNDkxfQ.4XnuqadV-S1cc5_4zSASbpB-4y_a3dCw1U5N53KDdmA
+
+###
+// GET USER BY ID
+GET http://localhost:3003/user/d7ea5ff5-3379-44e4-8ec9-4cdedee614c8
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjUxYjE1MDVhLTBhZTMtNDAwYy04YzMwLTA3MTg0NGYyZTA2NyIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTY2ODM5MDg5MSwiZXhwIjoxNjY4MzkxNDkxfQ.4XnuqadV-S1cc5_4zSASbpB-4y_a3dCw1U5N53KDdmA
+
+###
+// CREATE RECIPE
+POST http://localhost:3003/recipe/recipe
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjUxYjE1MDVhLTBhZTMtNDAwYy04YzMwLTA3MTg0NGYyZTA2NyIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTY2ODM5MDg5MSwiZXhwIjoxNjY4MzkxNDkxfQ.4XnuqadV-S1cc5_4zSASbpB-4y_a3dCw1U5N53KDdmA
+{
+    "title": "Bacon com Ovos",
+    "description": ""           
+}
+
+
+###
+// GET RECIPE BY ID
+GET http://localhost:3003/recipe/:id
+Authorization: 
