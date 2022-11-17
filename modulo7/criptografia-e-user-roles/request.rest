@@ -1,0 +1,36 @@
+// CREATE USER
+###
+POST http://localhost:3003/user/signup
+Content-Type: application/json
+
+{
+    "email": "baat@gmail.com",
+    "password": "ihasi6"
+}
+
+// LOGIN
+###
+POST http://localhost:3003/user/login
+Content-Type: application/json
+
+{
+    "email": "baat@gmail.com",
+    "password": "ihasi6"
+}
+
+// EDIT USER
+###
+PUT http://localhost:3003/user/edit
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImE4MjdhZjI2LTZmZmItNDdkNy04ZjVmLTBhZjk3NzVlOGVjZiIsImlhdCI6MTY2NzY1ODMwMCwiZXhwIjoxNjY3NjU4OTAwfQ.EfFP2SUFwJGtfLGnFodRC7UQJHZMm_vbRyyxSqMXhho
+Content-Type: application/json
+
+{
+    "email": "baa@gmail.com",
+    "password": "123456"
+}
+
+
+// GET PROFILE
+###
+GET http://localhost:3003/user/profile
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImE4MjdhZjI2LTZmZmItNDdkNy04ZjVmLTBhZjk3NzVlOGVjZiIsImlhdCI6MTY2NzY1ODMwMCwiZXhwIjoxNjY3NjU4OTAwfQ.EfFP2SUFwJGtfLGnFodRC7UQJHZMm_vbRyyxSqMXhho
