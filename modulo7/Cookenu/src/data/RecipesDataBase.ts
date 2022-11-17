@@ -22,10 +22,11 @@ export class RecipesDataBase extends BaseDatabase {
 
   public getRecipeById = async (id: string) =>{
     try {
-      await RecipesDataBase.connection(TABLE_RECIPES)
-      .select("id", "title", "description", "created_at", "author_id")
+      const result = await RecipesDataBase.connection(TABLE_RECIPES)
+      .select()
       .where({id})
       
+      return result[0]
     } catch (error:any) {
       throw new CustomError(400, error.message);
     }

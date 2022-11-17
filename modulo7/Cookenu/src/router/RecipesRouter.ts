@@ -10,4 +10,4 @@ const recipesController = new RecipesController();
 
 
 recipesRouter.post('/recipe', recipesController.createRecipes)
-// recipesRouter.get('/:id', recipesController.getRecipeById)
+recipesRouter.get('/:id', recipesController.getRecipeById)

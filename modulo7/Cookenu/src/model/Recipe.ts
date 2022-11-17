@@ -16,3 +16,10 @@ export interface InputSearchRecipe{
     token: string,
     id: string
   }
+
+export interface RecipeOutput {
+    id: string,
+    title: string,
+    description: string,
+    created_at: string
+}

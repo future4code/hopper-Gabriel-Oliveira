@@ -3,8 +3,9 @@ import { UserDataBase } from "../data/UserDataBase";
 import { CustomError } from "../error/CustomError";
 import { UserNotFound } from "../error/EmailNotFound";
 import { InvalidRequest } from "../error/InvalidRequest";
+import { RecipeNotFound } from "../error/RecipeNotFound";
 import { Unathorized } from "../error/Unauthorized";
-import { InputSearchRecipe, RecipesInputDTO } from "../model/Recipe";
+import { InputSearchRecipe, RecipeOutput, RecipesInputDTO } from "../model/Recipe";
 import { Authenticator } from "../services/Authenticator";
 import { generateId } from "../services/IdGenerator";
 
@@ -47,31 +48,27 @@ export class RecipesBusiness {
     }
   };
 
-  // public getRecipeById = async (input: InputSearchRecipe) => {
-  //   try {
-  //     const { token, id } = input;
+  public getRecipeById = async (search: InputSearchRecipe) => {
+    try {
+      const { token, id } = search;
 
-  //     if (!token || !id) {
-  //       throw new InvalidRequest();
-  //     }
-  //     const recipe = await recipesDataBase.getRecipeById(id)
-  //     const tokenData = authenticator.getTokenData(token);
-  //     const verifyUser = await userDataBase.getUserByToken(
-  //       (
-  //         await tokenData
-  //       ).id
-  //     );
+      if (!token || !id) {
+        throw new InvalidRequest();
+      }
+      const tokenData = await authenticator.getTokenData(token);
+      const verifyUser = await userDataBase.getUserByToken(tokenData.id);
+      const recipe = await recipesDataBase.getRecipeById(id)
 
-  //     if (!verifyUser) {
-  //       throw new Unathorized();
-  //     }
-  //     if(!recipe){
-  //       throw new Error("");
-        
-  //     }
+      if (!verifyUser) {
+        throw new Unathorized();
+      }
+      if (!recipe) {
+        throw new RecipeNotFound();
+      }
 
-  //   } catch (error: any) {
-  //     throw new CustomError(400, error.message);
-  //   }
-  // };
+      return recipe
+    } catch (error: any) {
+      throw new CustomError(400, error.message);
+    }
+  };
 }
