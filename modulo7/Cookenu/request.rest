@@ -1,0 +1,47 @@
+//CREATE USER
+POST http://localhost:3003/user/signup
+Content-Type: application/json
+
+
+{
+    "name": "Gabriel Oliveira",
+    "email": "gabriel@gmail.com",
+    "password": "gab123",
+    "role": "ADMIN"
+}
+
+###
+// LOGIN 
+POST http://localhost:3003/user/login
+Content-Type: application/json
+
+{
+    "email": "gabriel@gmail.com",
+    "password": "gab123"
+}
+
+### 
+//GET PROFILE
+GET http://localhost:3003/user/profile
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjE1NWEyMWQ4LTVlYjMtNGQ0Yy05YmFmLTYyMDM1YmVmYWJhYiIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTY2ODY0MDAyMywiZXhwIjoxNjY4NjQwNjIzfQ.QN7Pnhxi8nXmPYatu7Ggh3IkotcmjfsXLdnvip_tnMY
+###
+// GET USER BY ID
+GET http://localhost:3003/user/2cdc4b50-da47-4fff-8be3-6ed24edf8cce
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjE1NWEyMWQ4LTVlYjMtNGQ0Yy05YmFmLTYyMDM1YmVmYWJhYiIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTY2ODY0MDAyMywiZXhwIjoxNjY4NjQwNjIzfQ.QN7Pnhxi8nXmPYatu7Ggh3IkotcmjfsXLdnvip_tnMY
+
+###
+// CREATE RECIPE
+POST http://localhost:3003/recipe/recipe
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjE1NWEyMWQ4LTVlYjMtNGQ0Yy05YmFmLTYyMDM1YmVmYWJhYiIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTY2ODY0MDAyMywiZXhwIjoxNjY4NjQwNjIzfQ.QN7Pnhxi8nXmPYatu7Ggh3IkotcmjfsXLdnvip_tnMY
+
+{
+    "title": "Bacon com Ovos",
+    "description": "Frite os dois juntos e consuma."           
+}
+
+
+###
+// GET RECIPE BY ID
+GET http://localhost:3003/recipe/4d2e14b4-1765-4d72-be74-f8a3da23df8a
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjE1NWEyMWQ4LTVlYjMtNGQ0Yy05YmFmLTYyMDM1YmVmYWJhYiIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTY2ODY0MDAyMywiZXhwIjoxNjY4NjQwNjIzfQ.QN7Pnhxi8nXmPYatu7Ggh3IkotcmjfsXLdnvip_tnMY
